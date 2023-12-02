@@ -1,0 +1,19 @@
+/* Initially hide nav-item-name */
+.nav-item-name,
+.search-input,
+.search-icon {
+  display: none;
+  opacity: 0;
+  /* Adjust transition timing and easing */
+}
+
+#navigation-container:hover .nav-item-name,
+#navigation-container:hover .search-input {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+#navigation-container:hover .search-icon {
+  display: none;
+}
