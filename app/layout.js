@@ -3,7 +3,7 @@ import "./globals.css";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
-import Navigation from "./pages/(Auth)/Navigation/Navigation.jsx";
+import Navigation from "./components/Navigation/Navigation.jsx";
 
 import ReduxProvider from "./peoviders/ReduxProvider";
 
@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       <ReduxProvider>
         <body className={inter.className}>
           <ToastContainer />
-          <div className='flex'>
+          <div className='flex bg-black min-h-screen text-white'>
             <Navigation />
             {children}
           </div>

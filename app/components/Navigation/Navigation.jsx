@@ -52,7 +52,7 @@ const Navigation = () => {
       style={{ zIndex: 9999 }}
       className={`${
         showSidebar ? "hidden" : "flex"
-      } xl:flex lg:flex md:hidden sm:hidden flex-col justify-between ps-3 text-white bg-black w-[4%] hover:w-[15%] h-[100vh]  fixed `}
+      } xl:flex lg:flex md:hidden sm:hidden flex-col justify-between ps-3 text-white bg-black w-[4%] hover:w-[15%] h-[100vh]  fixed border-r border-white/20`}
       id='navigation-container'
     >
       <div className='flex flex-col justify-center gap-10 '>
