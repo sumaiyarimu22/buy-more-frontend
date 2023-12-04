@@ -20,15 +20,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <ReduxProvider>
-        <body className={inter.className}>
+      <body className={inter.className}>
+        <ReduxProvider>
           <ToastContainer />
           <div className='flex bg-black min-h-screen text-white'>
             <Navigation />
             {children}
           </div>
-        </body>
-      </ReduxProvider>
+        </ReduxProvider>
+      </body>
     </html>
   );
 }

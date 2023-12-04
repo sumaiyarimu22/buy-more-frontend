@@ -32,7 +32,7 @@ const Login = () => {
 
     try {
       const res = await login({ email, password }).unwrap();
-      console.log(res);
+      // console.log(res);
       dispatch(setCredentials({ ...res }));
     } catch (error) {
       toast.error(error?.data?.message || error.message);
@@ -89,7 +89,7 @@ const Login = () => {
         </form>
 
         <div className='mt-4'>
-          <p className=''>
+          <div className=''>
             New Customer ?{" "}
             <Link
               href={redirect ? `/register?redirect=${redirect}` : "/register"}
@@ -97,7 +97,7 @@ const Login = () => {
             >
               Register
             </Link>
-          </p>
+          </div>
         </div>
       </div>
     </section>
