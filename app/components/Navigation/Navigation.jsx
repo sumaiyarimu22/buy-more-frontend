@@ -54,7 +54,7 @@ const Navigation = () => {
       <div
         className={`${
           showSidebar ? "hidden" : "flex"
-        } xl:flex lg:flex md:hidden sm:hidden flex-col justify-between ps-3 bg-gray-50 min-w-[5%] hover:w-[15%] h-[100vh] left-0 top-0 fixed border-r border-black/10 z-[999] py-[3rem]`}
+        } xl:flex lg:flex md:hidden  flex-col justify-between ps-3 bg-gray-50 min-w-[5%] hover:min-w-[15%] h-[100vh] left-0 top-0 fixed border-r border-black/10 z-[999] py-[3rem] pe-2`}
         id='navigation-container'
       >
         <div className='flex flex-col justify-center gap-10 '>

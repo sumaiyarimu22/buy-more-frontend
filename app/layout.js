@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <ReduxProvider>
           <ToastContainer />
-          <div className='flex  min-h-screen '>
+          <div className='flex bg-white min-h-screen '>
             <Navigation />
             {children}
           </div>

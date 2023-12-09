@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { useRouter, usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useSelector, useDispatch } from "react-redux";
 import { useLoginMutation } from "@/app/redux/api/userApiSlice";
 import { setCredentials } from "@/app/redux/features/auth/authSlice";
@@ -91,7 +91,7 @@ const Login = () => {
 
         <div className='mt-4'>
           <div className=''>
-            New Customer ?{" "}
+            New Customer ?
             <Link
               href={redirect ? `/register?redirect=${redirect}` : "/register"}
               className='text-pink-500 hover:underline'
